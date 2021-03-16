@@ -1,5 +1,6 @@
-var cadena = 'Aquí va tu cadena';
-cadena = cadena.toLowerCase();
+//VERSIÓN 1.1
+// var cadena = 'Aquí va tu cadena';
+// cadena = cadena.toLowerCase();
 
 // PUEDE CREAR SU PROPIO CIFRADO CAMBIANDO LAS LETRAS O SIMBOLOS DE LAS LETRAS EN LA VARIBLE CIFRADOUNO
 const cifrados = {
@@ -154,7 +155,6 @@ const encriptar = (string, codificacion) => {
   return encryption.toString('');
 }
 var exporting = {
-    string: cadena,
     cifrados: cifrados,
     encrypt: encriptar,
 }
