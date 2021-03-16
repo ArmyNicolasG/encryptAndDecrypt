@@ -1,3 +1,6 @@
+VERSIÓN 1.2:
+Se agrega el uso exterior, para poder usar la función de encripción en un archivo externo
+
 VERSIÓN 1.1:
 La cadena se declara desde el index.js
 

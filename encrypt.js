@@ -32,122 +32,122 @@ const cifrados = {
   z: '026',
   space: '027'
 }
-const encriptar = (string, codificacion) => {
+const encriptar = (string) => {
   let tem = string.split('');
   var encryption = [];
   tem.forEach(caracter => {
     let encode;
     switch(caracter){
       case 'a':
-        encode = codificacion.a;
+        encode = cifrados.a;
         encryption.push(encode); 
       break;
       case 'b':
-        encode = codificacion.b;
+        encode = cifrados.b;
         encryption.push(encode);
       break;
       case 'c':
-        encode = codificacion.c;
+        encode = cifrados.c;
         encryption.push(encode); 
       break;
       case 'd':
-        encode = codificacion.d;
+        encode = cifrados.d;
         encryption.push(encode);
       break;
             case 'e':
-        encode = codificacion.e;
+        encode = cifrados.e;
         encryption.push(encode); 
       break;
       case 'f':
-        encode = codificacion.f;
+        encode = cifrados.f;
         encryption.push(encode);
       break;
       case 'g':
-        encode = codificacion.g;
+        encode = cifrados.g;
         encryption.push(encode); 
       break;
       case 'h':
-        encode = codificacion.h;
+        encode = cifrados.h;
         encryption.push(encode);
       break;
             case 'i':
-        encode = codificacion.i;
+        encode = cifrados.i;
         encryption.push(encode); 
       break;
       case 'j':
-        encode = codificacion.j;
+        encode = cifrados.j;
         encryption.push(encode);
       break;
       case 'k':
-        encode = codificacion.k;
+        encode = cifrados.k;
         encryption.push(encode); 
       break;
       case 'k':
-        encode = codificacion.k;
+        encode = cifrados.k;
         encryption.push(encode);
       break;
             case 'l':
-        encode = codificacion.l;
+        encode = cifrados.l;
         encryption.push(encode); 
       break;
       case 'm':
-        encode = codificacion.m;
+        encode = cifrados.m;
         encryption.push(encode);
       break;
       case 'n':
-        encode = codificacion.n;
+        encode = cifrados.n;
         encryption.push(encode); 
       break;
       case 'ñ':
-        encode = codificacion.ñ;
+        encode = cifrados.ñ;
         encryption.push(encode);
       break;
       case 'o':
-        encode = codificacion.o;
+        encode = cifrados.o;
         encryption.push(encode);
       break;
             case 'p':
-        encode = codificacion.p;
+        encode = cifrados.p;
         encryption.push(encode);
       break;
       case 'q':
-        encode = codificacion.q;
+        encode = cifrados.q;
         encryption.push(encode);
       break;
       case 'r':
-        encode = codificacion.r;
+        encode = cifrados.r;
         encryption.push(encode);
       break;
       case 's':
-        encode = codificacion.s;
+        encode = cifrados.s;
         encryption.push(encode);
       break;
             case 't':
-        encode = codificacion.t;
+        encode = cifrados.t;
         encryption.push(encode);
       break;
       case 'u':
-        encode = codificacion.u;
+        encode = cifrados.u;
         encryption.push(encode);
       break;
             case 'v':
-        encode = codificacion.v;
+        encode = cifrados.v;
         encryption.push(encode);
       break;
       case 'x':
-        encode = codificacion.x;
+        encode = cifrados.x;
         encryption.push(encode);
       break;
             case 'y':
-        encode = codificacion.y;
+        encode = cifrados.y;
         encryption.push(encode);
       break;
       case 'z':
-        encode = codificacion.z;
+        encode = cifrados.z;
         encryption.push(encode);
       break;
       case ' ':
-        encode = codificacion.space;
+        encode = cifrados.space;
         encryption.push(encode);
       break;
     }
@@ -155,7 +155,6 @@ const encriptar = (string, codificacion) => {
   return encryption.toString('');
 }
 var exporting = {
-    cifrados: cifrados,
     encrypt: encriptar,
 }
 module.exports = exporting;
