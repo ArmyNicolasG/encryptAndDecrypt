@@ -1,3 +1,6 @@
+Versión 1.5:
+Solucionando probleamas con el módulo
+
 Versión 1.4:
 Publicando
 
