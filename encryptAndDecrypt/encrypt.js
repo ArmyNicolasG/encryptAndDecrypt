@@ -1,7 +1,4 @@
-//VERSIÓN 1.1
-// var cadena = 'Aquí va tu cadena';
-// cadena = cadena.toLowerCase();
-
+//VERSIÓN 1.4
 // PUEDE CREAR SU PROPIO CIFRADO CAMBIANDO LAS LETRAS O SIMBOLOS DE LAS LETRAS EN LA VARIBLE CIFRADOUNO
 const cifrados = {
   a: '001',
