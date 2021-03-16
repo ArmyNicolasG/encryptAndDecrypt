@@ -1,3 +1,6 @@
+Versión 1.6:
+Optimización
+
 Versión 1.5:
 Solucionando probleamas con el módulo
 

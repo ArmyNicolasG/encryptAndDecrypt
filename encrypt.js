@@ -1,4 +1,4 @@
-//VERSIÓN 1.4
+//VERSIÓN 1.6
 // PUEDE CREAR SU PROPIO CIFRADO CAMBIANDO LAS LETRAS O SIMBOLOS DE LAS LETRAS EN LA VARIBLE CIFRADOUNO
 const cifrados = {
   a: '001',
@@ -33,125 +33,10 @@ const encriptar = (string) => {
   let tem = string.split('');
   var encryption = [];
   tem.forEach(caracter => {
-    let encode;
-    switch(caracter){
-      case 'a':
-        encode = cifrados.a;
-        encryption.push(encode); 
-      break;
-      case 'b':
-        encode = cifrados.b;
-        encryption.push(encode);
-      break;
-      case 'c':
-        encode = cifrados.c;
-        encryption.push(encode); 
-      break;
-      case 'd':
-        encode = cifrados.d;
-        encryption.push(encode);
-      break;
-            case 'e':
-        encode = cifrados.e;
-        encryption.push(encode); 
-      break;
-      case 'f':
-        encode = cifrados.f;
-        encryption.push(encode);
-      break;
-      case 'g':
-        encode = cifrados.g;
-        encryption.push(encode); 
-      break;
-      case 'h':
-        encode = cifrados.h;
-        encryption.push(encode);
-      break;
-            case 'i':
-        encode = cifrados.i;
-        encryption.push(encode); 
-      break;
-      case 'j':
-        encode = cifrados.j;
-        encryption.push(encode);
-      break;
-      case 'k':
-        encode = cifrados.k;
-        encryption.push(encode); 
-      break;
-      case 'k':
-        encode = cifrados.k;
-        encryption.push(encode);
-      break;
-            case 'l':
-        encode = cifrados.l;
-        encryption.push(encode); 
-      break;
-      case 'm':
-        encode = cifrados.m;
-        encryption.push(encode);
-      break;
-      case 'n':
-        encode = cifrados.n;
-        encryption.push(encode); 
-      break;
-      case 'ñ':
-        encode = cifrados.ñ;
-        encryption.push(encode);
-      break;
-      case 'o':
-        encode = cifrados.o;
-        encryption.push(encode);
-      break;
-            case 'p':
-        encode = cifrados.p;
-        encryption.push(encode);
-      break;
-      case 'q':
-        encode = cifrados.q;
-        encryption.push(encode);
-      break;
-      case 'r':
-        encode = cifrados.r;
-        encryption.push(encode);
-      break;
-      case 's':
-        encode = cifrados.s;
-        encryption.push(encode);
-      break;
-            case 't':
-        encode = cifrados.t;
-        encryption.push(encode);
-      break;
-      case 'u':
-        encode = cifrados.u;
-        encryption.push(encode);
-      break;
-            case 'v':
-        encode = cifrados.v;
-        encryption.push(encode);
-      break;
-      case 'x':
-        encode = cifrados.x;
-        encryption.push(encode);
-      break;
-            case 'y':
-        encode = cifrados.y;
-        encryption.push(encode);
-      break;
-      case 'z':
-        encode = cifrados.z;
-        encryption.push(encode);
-      break;
-      case ' ':
-        encode = cifrados.space;
-        encryption.push(encode);
-      break;
-    }
+    if (caracter in cifrados)
+  encryption.push(cifrados[caracter])
+
   })
-  return encryption.toString('');
+  return encryption.join('');
 }
-var exporting = {
-    encrypt: encriptar,
-}
-module.exports = exporting;
+exports.encrypt = encriptar;

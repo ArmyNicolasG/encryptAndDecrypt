@@ -1,4 +1,4 @@
-//VERSIÓN 1.4
+//VERSIÓN 1.6
 const encrypt = require('./encrypt.js');
 
 let string = 'Aquí pones tu cadena de texto a encriptar';
